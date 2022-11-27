@@ -1,0 +1,121 @@
+@use 'global';
+/*
+.menu {
+  box-shadow: 0px 5px 5px global.$c-shadow;
+
+  &__checkbox {
+    position: absolute;
+    left: -9999px;
+    /*display: none*/
+
+/*}
+
+  &__togler {
+    cursor: pointer;
+  }
+
+  &__list {
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: black;
+    background-color: global.$c-fourth;
+  }
+
+  &__item {
+    border-bottom: 1px solid global.$c-primary;
+  }
+
+  &__link {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+  }
+
+  &__item--active,
+  &__link {
+    background-color: global.$c-fourth;
+    color: black;
+  }
+
+  &__link:hover,
+  &__link:focus {
+    background-color: global.$c-secondary;
+    color: global.$c-primary;
+  }
+
+  &__checkbox:checked~&__list {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1040px) {
+
+  .menu {
+    box-shadow: none;
+    margin-top: 3rem;
+    text-align: center;
+
+    &__togler {
+      display: none;
+    }
+
+    &__list {
+      display: flex !important;
+      margin: 0;
+      padding: 0;
+      background-color: global.$c-primary;
+    }
+
+    &__link {
+      padding: auto;
+      justify-content: space-evenly;
+      background-color: global.$c-primary;
+    }
+
+    &__item--active &__link {
+      text-align: center;
+      background-color: global.$c-primary;
+      color: global.$c-third;
+    }
+
+    &__link:hover,
+    &__link:focus {
+      background-color: global.$c-primary;
+      color: global.$c-third;
+    }
+
+    /* test button*/
+/*
+    &__item {
+      position: relative;
+      border: 0;
+      outline: none;
+      width: 10rem;
+      margin-bottom: 2rem;
+    }
+
+    &__item::after {
+      content: ' ';
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      height: 0.175rem;
+
+      background: global.$c-third;
+
+      transform: scale(0, 1);
+      transition: transform 0.3s ease;
+    }
+
+    &__item:hover::after,
+    &__item:active::after {
+      transform: scale(1, 1);
+      color: global.$c-third;
+    }
+  }
+}*/
+

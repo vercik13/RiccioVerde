@@ -1,0 +1,36 @@
+.con__flex {
+  max-width: 65%;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.con__title {
+  text-transform: uppercase;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.con {
+  list-style: 1.5;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.con__icon {
+  margin: 1rem;
+  align-items: center;
+}
+
+.icon {
+  margin: 0 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+
+  .con {
+    margin: 2rem auto;
+  }
+}

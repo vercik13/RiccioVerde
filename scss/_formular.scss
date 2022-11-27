@@ -1,0 +1,52 @@
+@use 'global';
+
+
+.formular {
+  margin: 1rem 2rem;
+}
+
+
+input,
+textarea {
+  font-size: 16px;
+  padding: 2px;
+
+}
+
+.firma-form,
+.name-form,
+.email-form,
+.tel-form {
+  margin-right: 10px;
+  padding: 2rem auto;
+
+}
+
+.text-form {
+  margin-top: 20px;
+  padding: 1rem auto;
+  margin-right: 10px;
+
+}
+
+.form__flex {
+  display: flex;
+  max-width: 200px;
+}
+
+.button-form {
+  text-align: end;
+  margin-top: 5px;
+
+}
+
+button {
+  cursor: pointer;
+  font-size: 16px;
+  padding: 2px 5px;
+  background-color: #04AA6D;
+  border: #04AA6D 2px solid;
+  border-radius: 10px;
+  color: white;
+
+}

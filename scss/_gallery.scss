@@ -1,0 +1,72 @@
+@use "global";
+
+
+
+/*.container {
+  display: inline-block;
+}*/
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.galery__text--primary {
+  margin: 5px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main__photo {
+
+
+  max-width: 200px;
+  width: 100%;
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  margin: 0.5rem;
+  //background-color: global.$c-primary;
+  border-radius: 3px;
+  box-shadow: 0px 5px 5px grey;
+}
+
+.main__photo:hover {
+  opacity: .7;
+}
+
+@media screen and (min-width: 1040px) {
+  /* Fotogalerie */
+  /* .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 400px);
+    gap: 2px;
+  }
+
+ /* .main__galery img {
+    width: 300px;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .container {
+
+    display: flex;
+    flex-wrap: wrap;
+    //margin: 0 auto;
+  }
+
+  .main__photo {
+    max-width: 300px;
+
+    flex: 1 1 calc(100% / 3);
+  }
+
+  /*.main__photo {
+      
+    }*/
+
+}

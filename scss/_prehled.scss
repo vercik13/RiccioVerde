@@ -1,0 +1,27 @@
+@use 'global';
+
+.sluzby {
+  width: 90%;
+  margin: 2rem auto;
+  text-align: center;
+  padding: 2rem;
+}
+
+.about__box h2 {
+  margin: 2rem auto 1.5rem auto;
+}
+
+.about__text p {
+
+  list-style: 1.5;
+}
+
+
+@media screen and (max-width: 842px) {
+
+  .sluzby {
+    width: 90%;
+    padding: 0;
+  }
+
+}

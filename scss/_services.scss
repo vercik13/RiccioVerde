@@ -1,0 +1,27 @@
+@use 'global';
+
+.services__text--primary h1 {
+  text-transform: uppercase;
+  margin: 2rem auto;
+}
+
+.services__text--primary p {
+  margin-bottom: 2rem;
+}
+
+.services__wrapper {
+  width: 75%;
+  margin: 4rem auto;
+  text-align: center;
+}
+
+
+
+@media screen and (max-width: 842px) {
+
+  .services__wrapper {
+    width: 90%;
+    padding: 0;
+  }
+
+}

@@ -1,0 +1,108 @@
+/* intuitivnější box-sizing pro všechny prvky na stránce */
+html {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+/*
+:root {
+	--grey-100: hsl(0, 0%, 10%);
+	--grey-200: hsl(0, 0%, 20%);
+	--grey-300: hsl(0, 0%, 30%);
+	--grey-400: hsl(0, 0%, 40%);
+	--grey-500: hsl(0, 0%, 50%);
+	--grey-600: hsl(0, 0%, 60%);
+	--grey-700: hsl(0, 0%, 70%);
+	--grey-800: hsl(0, 0%, 80%);
+	--grey-900: hsl(0, 0%, 90%);
+
+	--primary: #004769;
+	--accent: rgba(201, 201, 201, 0);
+
+	--font-default: 'Open Sans', sans-serif;
+	--font-special: 'Raleway', sans-serif;
+
+	--spacer: 1rem;
+	--spacer-quarter: calc(var(--spacer) / 4);
+	--spacer-half: calc(var(--spacer) / 2);
+	--spacer-bigger: calc(var(--spacer) * 1.5);
+	--spacer-double: calc(var(--spacer) * 2);
+}*/
+
+$c-primary: white;
+$c-secondary: #a3a3a3;
+$c-third: rgba(68, 184, 172);
+$c-shadow: rgba(82, 82, 82, 0.5);
+$c-fourth: #dddbdb;
+$c-transparent: rgba(0, 0, 0, 0.5);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+  line-height: 2;
+
+}
+
+label,
+input,
+p {
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/*
+a {
+  text-decoration: none;
+  color: black;
+}*/
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  animation: opening 1s ease-in-out forwards;
+  background-color: white;
+}
+
+h1 {
+  font-family: "Open sans", cursive;
+}
+
+/*
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  width: 90%;
+  background-color: $c-primary;
+  margin: 0 auto;
+}
+
+/*
+@media screen and (min-width: 1040px) {
+  .hero {
+    width: 80%;
+  }
+}*/

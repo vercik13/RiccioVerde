@@ -1,0 +1,48 @@
+@use 'global';
+
+
+.contact {
+  padding: 2rem;
+  background-color: rgb(65, 65, 65);
+  color: white;
+}
+
+.contact a {
+  color: white;
+}
+
+.contact__address {
+
+  padding: 1rem;
+}
+
+.contact__title,
+.contact__address li {
+  text-transform: uppercase;
+
+}
+
+.contact__map {
+  margin-top: 1rem;
+  width: 100%;
+  height: 400px;
+
+}
+
+.footer__copyright {
+  padding: 10px;
+  text-align: center;
+  background-color: rgb(65, 65, 65);
+  color: white;
+}
+
+@media screen and (min-width: 810px) {
+
+  .contact {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-around;
+    padding: 3rem;
+
+  }
+}

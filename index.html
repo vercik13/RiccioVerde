@@ -1,0 +1,209 @@
+---
+layout: layouts/sablona.njk
+---
+
+<section class="glide">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+
+        <li class="glide__slide">
+          <div class="glide__site1">
+            <h2>Azienda</h2>
+          </div>
+        </li>
+        <li class="glide__slide">
+          <div class="glide__site2">
+            <div class="glide__site2--box">
+              <div class="glide__site2--odkaz">
+                <h2>Apicoltura</h2>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="glide__slide">
+          <div class="glide__site3">
+            <h2>Orto</h2>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="glide__arrows" data-glide-el="controls">
+      <button class="glide__arrow glide__arrow--left" data-glide-dir="<">←</button>
+      <button class="glide__arrow glide__arrow--right" data-glide-dir=">">→</button>
+    </div>
+
+    <div class="glide__bullets" data-glide-el="controls[nav]">
+      <button class="glide__bullet" data-glide-dir="=0"></button>
+      <button class="glide__bullet" data-glide-dir="=1"></button>
+      <button class="glide__bullet" data-glide-dir="=2"></button>
+    </div>
+</section>
+
+<div class="hero">
+  <section class="sluzby" id="sluzby">
+    <div class="about__box">
+      <h2>Riccio Verde</h2>
+      <p class="about__text">
+        Chi siamo
+
+Siamo una famiglia contadina nata dalla passione per la terra, l'ideologia di una vita scandita dal ritmo di una volta, unita all'amore per la natura e l'interazione con gli animali... Da queste basi nasce l'azienda agricola Il Riccio Verde. 
+Il nostro podere si trova sulle colline Parmensi ad una altidudine di 550 metri in un ambiente misto di prati e boschi dove abbiamo trovato un ottimo equilibrio per sviluppare la nostra attività. L'altitudine non eccessiva ci permette di avere dei buoni risultati negli orti, i prati stabili ci permettono di avere degli ottimi foraggi per i nostri animali e i boschi ci garantiscono una autonomia di legna. Non possono mancare i pozzi, che dopo essere stati abbandonati per decenni, li abbiamo sistemati e  sono ritornati in funzione.
+Non meno importante per la nostra attività principale, l'APICOLTURA, è l'ambiente incontaminato da una agricoltura intensiva, una scarsa presenza umana e una ricca biodiversità botanica che ci permette di avere un prodotto genuino e di qualità.
+
+      </p>
+    </div>
+    
+  </section>
+
+  <div class="aside__wrapper">
+    <aside class="aside">
+      
+   <!--
+      <div class="clanek">
+        <a href="/vyroba/">
+          <figure><img class="clanek__image" src="/images/vyroba/drawings3.jpg" alt="vyroba" /></figure>
+          
+            <div class="clanek__description">
+              
+              <h2 class="clanek__name">Technická realizace výroby</h2>
+              <p class="clanek__description"> U projektů našich klientů často stojíme již od prvních nápadů. Naším záměrem je být co nejvíce nápomocni v realizaci. Díky individuálnímu přístupu ke klientům řešíme jejich projekt, pomáháme již se samotným prvotním technickým návrhem a stojíme při nich po celou dobu naší spolupráce. </p>
+              <p class="clanek__info">Více informací...</p>
+            </div>
+          </a>
+      </div>
+    -->   
+  
+      <div class="clanek">
+        <a href="/apicoltura/">
+        <figure><img class="clanek__image" src="/images/vcelareni.jpg" alt="apicoltura" /></figure>
+          
+            <div class="clanek__description">
+              <h2 class="clanek__name">Apicoltura</h2>
+              <p class="clanek__description"></p>
+              <p class="clanek__info">Více informací...</p>
+            </div>
+          </a>
+      </div>
+  
+      <div class="clanek">
+        <a href="/svarovani/">
+        <figure><img class="clanek__image" src="/images/chov.jpg" alt="allevamento" /></figure>
+          
+            <div class="clanek__description">
+              <h2 class="clanek__name">Allevamento</h2>
+              <p class="clanek__description"></p>
+              <p class="clanek__info">Více informací...</p>
+            </div>
+          </a>
+      </div>
+
+      <div class="clanek">
+        <a href="/svarovani/">
+        <figure><img class="clanek__image" src="/images/vegetables.jpg" alt="orto" /></figure>
+          
+            <div class="clanek__description">
+              <h2 class="clanek__name">Orto</h2>
+              <p class="clanek__description"></p>
+              <p class="clanek__info">Více informací...</p>
+            </div>
+          </a>
+      </div>
+
+      <div class="clanek">
+        <a href="/svarovani/">
+        <figure><img class="clanek__image" src="/images/azienda.jpg" alt="azienda" /></figure>
+          
+            <div class="clanek__description">
+              <h2 class="clanek__name">Azienda</h2>
+              <p class="clanek__description"></p>
+              <p class="clanek__info">Více informací...</p>
+            </div>
+          </a>
+      </div>
+
+    </aside>
+  </div>
+
+  <div class="blog" id="blog">
+    <h2>Blog</h2>
+    <p></p>
+    <div class="aside__wrapper">
+      <h2>Novinky</h2>
+      <aside class="aside">
+        <!--
+        
+        {% for post in collections.sluzby | reverse | limit(3) %}
+    
+        <div class="clanek">
+          <img class="clanek__image" src="/images/{{ post.data.foto }}" alt="{{ post.data.alt }}" />
+    
+          <div class="clanek__description">
+            <h2 class="clanek__name">{{ post.data.title }}</h2>
+            <p class="clanek__description">{{ post.data.perex }}</p>
+            <p><a href="{{ post.url }}">Více informací...</a></p>
+          </div>
+        </div>
+    
+        {% endfor %}-->
+      </aside>
+    </div>
+    </div>
+
+  <div class="background-img"></div>
+
+<div class="con__box" id="kontakt">
+  <h2 class="con__title">Kontakt</h2>
+  <div class="con__flex">
+    <div class="con">
+      <h2>+420 739 175 831</h2>
+      <div class="con__icon">
+      <img class="icon" src="/images/mail.png" alt="mail" width="25"><a href="mailto:jan-kocka@seznam.cz">jan-kocka@seznam.cz</a></div>
+      <div class="con__icon">
+      <img class="icon" src="/images/pin.png" alt="mail" width="25">Na Kopci 4188/7, 586 01 Jihlava</div>
+    </div>
+
+
+    <div class="formular" id="formular">
+      <div class="form-wrapper">
+
+        <form
+        action="https://formspree.io/f/mknennwn"
+        method="POST"
+      >
+      <div class="form__flex">
+            <div class="firma-form">
+              <label for="name"></label>
+              <input type="text" name="name" required placeholder="Firma" />
+            </div>
+            <div class="name-form">
+              <label for="name"></label>
+              <input type="text" name="name" required placeholder="Jméno a příjmení" />
+            </div>
+      </div>
+      <div class="form__flex">
+          <div class="email-form">
+            <label for="email"></label>
+            <input type="email" required name="_replyto" placeholder="Email"/>
+          </div> 
+          <div class="tel-form">
+            <label for="telephone"></label>
+            <input type="telephone" name="telephone" id="telephone" placeholder="Tel.">
+          </div>
+        </div>
+          <div class="text-form">
+            <label for="text"></label>
+            <textarea name="message" cols="50" rows="10" placeholder="Zpráva"></textarea> 
+          </div>  
+        <div class="button-form">
+          <button class="button" value="Send" type="submit">Odeslat</button>
+        </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+</div>
