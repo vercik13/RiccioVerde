@@ -58,12 +58,12 @@
 }
 
 .menu {
-  width: 95%;
+  
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-
+ 
   align-items: center;
+  justify-items: center;
   height: 12vh;
 
 }
@@ -74,7 +74,7 @@
 }
 
 .logo {
-  width: 8rem;
+  width: 10rem;
   max-width: 100%;
   padding-top: 1rem;
 }
