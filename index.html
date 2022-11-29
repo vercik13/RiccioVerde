@@ -110,32 +110,33 @@ Non meno importante per la nostra attività principale, l'APICOLTURA, è l'ambie
     </aside>
   </div>
 
-  <div class="blog" id="blog">
-    <h2>Blog</h2>
-    <p></p>
-    <div class="aside__wrapper">
-      <h2>Novinky</h2>
-      <aside class="aside">
-        <!--
-        
-        {% for post in collections.sluzby | reverse | limit(3) %}
-    
-        <div class="clanek">
-          <img class="clanek__image" src="/images/{{ post.data.foto }}" alt="{{ post.data.alt }}" />
-    
-          <div class="clanek__description">
-            <h2 class="clanek__name">{{ post.data.title }}</h2>
-            <p class="clanek__description">{{ post.data.perex }}</p>
-            <p><a href="{{ post.url }}">Více informací...</a></p>
-          </div>
-        </div>
-    
-        {% endfor %}-->
-      </aside>
-    </div>
-    </div>
+<div class="background-img"></div>
 
-  <div class="background-img"></div>
+<div class="blog" id="blog">
+
+  <div class="aside__wrapper">
+    <h2>Blog</h2>
+    <aside class="aside">
+      
+      
+      {% for post in collections.blog | reverse | limit(3) %}
+  
+      <div class="clanek">
+        <img class="clanek__image" src="/images/{{ post.data.foto }}" alt="{{ post.data.alt }}" />
+  
+        <div class="clanek__description">
+          <h2 class="clanek__name">{{ post.data.title }}</h2>
+          <p class="clanek__description">{{ post.data.perex }}</p>
+          <p><a href="{{ post.url }}">Více informací...</a></p>
+        </div>
+      </div>
+  
+      {% endfor %}
+    </aside>
+  </div>
+
+</div>
+
 
 <div class="con__box" id="kontakt">
   <h2 class="con__title">Contatti</h2>
@@ -150,45 +151,47 @@ Non meno importante per la nostra attività principale, l'APICOLTURA, è l'ambie
       <img class="icon" src="/images/pin.png" alt="mail" width="25">Pellegrino Parmense</div>
     </div>
 
+    <div class="background-img--formular">
+      <div class="formular" id="formular">
+        <div class="form-wrapper">
 
-    <div class="formular" id="formular">
-      <div class="form-wrapper">
-
-     <!--  <form
-        action="https://formspree.io/f/mknennwn"
-        method="POST"
-      >--> 
-      <div class="form__flex">
-            <div class="firma-form">
-              <label for="name"></label>
-              <input type="text" name="name" required placeholder="Firma" />
+      <!--  <form
+          action="https://formspree.io/f/mknennwn"
+          method="POST"
+        >--> 
+        <div class="form__flex">
+              <div class="firma-form">
+                <label for="name"></label>
+                <input type="text" name="name" required placeholder="Firma" />
+              </div>
+              <div class="name-form">
+                <label for="name"></label>
+                <input type="text" name="name" required placeholder="Jméno a příjmení" />
+              </div>
+        </div>
+        <div class="form__flex">
+            <div class="email-form">
+              <label for="email"></label>
+              <input type="email" required name="_replyto" placeholder="Email"/>
+            </div> 
+            <div class="tel-form">
+              <label for="telephone"></label>
+              <input type="telephone" name="telephone" id="telephone" placeholder="Tel.">
             </div>
-            <div class="name-form">
-              <label for="name"></label>
-              <input type="text" name="name" required placeholder="Jméno a příjmení" />
-            </div>
-      </div>
-      <div class="form__flex">
-          <div class="email-form">
-            <label for="email"></label>
-            <input type="email" required name="_replyto" placeholder="Email"/>
-          </div> 
-          <div class="tel-form">
-            <label for="telephone"></label>
-            <input type="telephone" name="telephone" id="telephone" placeholder="Tel.">
           </div>
-        </div>
-          <div class="text-form">
-            <label for="text"></label>
-            <textarea name="message" cols="50" rows="10" placeholder="Zpráva"></textarea> 
-          </div>  
-        <div class="button-form">
-          <button class="button" value="Send" type="submit">Odeslat</button>
-        </div>
-        </form>
+            <div class="text-form">
+              <label for="text"></label>
+              <textarea name="message" cols="50" rows="10" placeholder="Zpráva"></textarea> 
+            </div>  
+          <div class="button-form">
+            <button class="button" value="Send" type="submit">Odeslat</button>
+          </div>
+          </form>
 
+        </div>
       </div>
     </div>
+    
   </div>
 </div>
 
