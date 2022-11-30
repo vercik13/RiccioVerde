@@ -1,13 +1,13 @@
 ---
 layout: layouts/clanek.njk
-title: Mikrojehličková mezoterapie
-perex: Mikrojehličkování je prováděno po znecitlivění pokožky elektrickým mikrojehličkovacím perem.
-foto: 
-alt: Mikrojehličková mezoterapie
+title: Zeleninová zahrada
+perex: Zeleninové záhony
+foto: blog2.jpg
+alt: plody naší zahrady
 tags: blog
 ---
 
-### Mikrojehličková mezoterapie
+### Zeleninová zahrada
 
 #### Princip ošetření a účinky ošetření
 

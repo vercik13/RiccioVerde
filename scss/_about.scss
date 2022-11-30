@@ -1,6 +1,6 @@
 @use 'global';
 
-.sluzby {
+.about {
   width: 90%;
   margin: 2rem auto;
   text-align: center;
@@ -12,15 +12,13 @@
 }
 
 .about__text p {
-
   list-style: 1.5;
 }
 
 
 @media screen and (max-width: 842px) {
 
-  .sluzby {
-    width: 90%;
+  .about {
     padding: 0;
   }
 

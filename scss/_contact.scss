@@ -2,12 +2,17 @@
 
 .contact {
   padding: 2rem;
-  background-color: #EADDCA;
- 
+  background-color: #AEA9A9;
+  color: white;
+  
 }
 
 .contact a {
   color: white;
+}
+
+.contact__title {
+  font-size: 24px;
 }
 
 .contact__address--menu {

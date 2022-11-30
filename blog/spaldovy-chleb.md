@@ -1,13 +1,13 @@
 ---
 layout: layouts/clanek.njk
-title: Galvanický lift
-perex: Hloubkový lifting včetně masáže, (mezoterapie) + Ultrazvuk + Radiofrekvence s led fotony, microprody, galvanický lift, vibrace.
-foto: apicoltura.jpg
-alt: galvanický lift
+title: Špaldový chléb
+perex: domácí recept na špaldový chléb
+foto: blog4.jpg
+alt: špaldový chléb
 tags: blog
 ---
 
-### Galvanický lift omlazení a zpevnění pleti s 4D efektem
+### Špaldový chléb
 
 Lift využívá několik, současně působící vysokofrekvenční vlny na vpravování kosmetických ingrediencí hluboko do nejniternějších vrstev pokožky, vylepšuje strukturu a omlazuje pleť, aktivuje biochemické a biofyzikální procesy v různých vrstvách epitelu. Lift zařízení svou evoluční technologií překračuje všechny dosud známé kosmetické ošetření s minimální délkou časové investice 30 minut. Metoda maximalizuje účinek všech dosud známých, nejúčinnějších vysokofrekvenčních elektropřístrojů zaměřených na omlazení a zpevnění pleti.
 

@@ -1,17 +1,21 @@
-@use 'global';
-@use 'gallery';
+
+@use 'about';
 @use 'article';
 @use 'aside';
+@use 'background-img';
+@use 'burger';
+@use 'button';
+@use 'blog';
+@use 'card';
 @use 'clanek';
+@use 'con';
 @use 'contact';
 @use 'footer';
+@use 'formular';
+@use 'gallery';
 @use 'glide';
+@use 'global';
 @use 'header';
 @use 'menu';
-@use 'burger';
-@use 'prehled';
-@use 'background-img';
-@use 'formular';
-@use 'services';
-@use 'con';
-@use 'reference';
+@use 'variables';
+

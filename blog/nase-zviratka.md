@@ -1,9 +1,9 @@
 ---
 layout: layouts/clanek.njk
-title: Hyaluron Pen
-perex: Zvětšení rtů a výplň vrásek kyselinou hyaluronovou. Kyselina hyaluronová může dodat rtům větší objem a zvýraznit jejich kontury.
-foto: 
-alt: Hyaluron Pen
+title: Zvířátka
+perex: naše zvířátka
+foto: blog3.jpg
+alt: naše zvířátka
 tags: blog
 ---
 
