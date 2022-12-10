@@ -60,12 +60,13 @@
 
 
 .header__logo {
+  position: relative;
   margin: 0 auto;
   text-align: center;
 }
 
 .logo {
-  width: 10rem;
+  width: 9rem;
   max-width: 100%;
   padding-top: 1rem;
 }
@@ -74,9 +75,9 @@
 @media screen and (max-width: 842px) {
 
   #logo {
-    width: 8rem;
+    width: 7rem;
     max-width: 100%;
   }
 
-  
+
 }

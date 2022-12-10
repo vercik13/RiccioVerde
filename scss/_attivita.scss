@@ -1,0 +1,29 @@
+@use 'global';
+
+.attivita {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+
+  &__text {
+    display: flex;
+  }
+
+
+  &__wrapper h2 {
+    margin: 0;
+    padding-top: 0.5rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .attivita {
+    width: 90%;
+
+  }
+}

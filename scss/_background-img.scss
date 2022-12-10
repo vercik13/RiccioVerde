@@ -22,6 +22,71 @@
   height: 300px;
 }
 
+.background-img--services-panorama {
+  background-image: url('/images/panorama.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 300px;
+}
+
+.background-img--services-venkov-bg {
+  background-image: url('/images/venkov-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 350px;
+}
+
+
+.background-img--services-allevamento {
+  background-image: url('/images/background1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 4rem;
+}
+
+.background-img--services-orto {
+  background-image: url('/images/orto-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 4rem;
+}
+
+.background-img--services-part-two {
+  background-image: url('/images/uly-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 4rem;
+}
+
+.background-img--services-part-two-allevamento {
+  background-image: url('/images/ovce.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 4rem;
+}
+
 .background-img--services2 {
   background-image: url('/images/vyroba/svarovani2-copy.jpg');
   background-repeat: no-repeat;
@@ -33,10 +98,11 @@
 }
 
 .background-img--formular {
-  background-image: url('/images/vyroba/svarovani2-copy.jpg');
+  background-image: url('/images/vyroba/bg-formular.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  //background-attachment: fixed;
+  background-attachment: fixed;
+
 
 }

@@ -1,8 +1,9 @@
 @use 'global';
 
+/*
+
 .aside {
   display: flex;
-  flex-wrap: wrap;
   padding: 1rem;
   width: 65%;
   margin: 2rem auto;
@@ -20,10 +21,11 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
 
   .aside {
     width: 90%;
+    flex-wrap: wrap;
 
   }
-}
+}*/

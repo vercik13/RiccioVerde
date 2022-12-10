@@ -2,41 +2,42 @@
 
 
 .formular {
-  margin: 1rem 2rem;
-
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 500px;
+  width: 100%;
 }
 
-
-input,
-textarea {
+input {
+  margin-bottom: 5px;
+  height: 30px;
+  max-width: 250px;
   font-size: 16px;
   padding: 2px;
+  width: 100%;
 
 }
 
-.firma-form,
-.name-form,
-.email-form,
-.tel-form {
-  margin-right: 10px;
-  padding: 2rem auto;
-
+textarea {
+  height: 200px;
+  max-width: 500px;
+  font-size: 16px;
+  padding: 2px;
+  width: 100%;
 }
 
 .text-form {
   margin-top: 20px;
   padding: 1rem auto;
-  margin-right: 10px;
-
 }
 
-.form__flex {
-  display: flex;
-  max-width: 200px;
-}
 
 .button-form {
   text-align: end;
   margin-top: 5px;
 
+}
+
+@media screen and (max-width: 1000px) {
+  .formular {}
 }

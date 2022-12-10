@@ -1,12 +1,159 @@
 @use 'global';
 
-.blog {
-    margin: 2rem auto;
+.homePage__blog-wrapper {
+  background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+
+}
+
+.homePage__blog-site-container {
+  width: 70%;
+  padding: 2rem;
+  margin: 2rem auto;
+
+
 }
 
 
-#honeycomb {
-	width: 100%;
-	height: 100%;
-	background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);	
+.homePage__blog {
+
+  padding-bottom: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+
+}
+
+.blog__wrapper {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.blog__wrapper h2,
+.homePage__blog-wrapper {
+  text-align: center;
+  padding-top: 3rem;
+}
+
+
+.blog-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 50px;
+  grid-gap: 60px;
+}
+
+.blog {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+}
+
+.thumbnail {
+  object-fit: contain;
+}
+
+.blog__image,
+.clanek__image {
+  width: 100%;
+  height: 100%;
+  max-height: 350px;
+  object-fit: cover;
+}
+
+.blog__button {
+  justify-content: center;
+  margin: 1rem auto;
+}
+
+.blog-post {
+  background-color: rgb(251, 251, 251);
+  margin: 24px 0;
+
+  box-shadow: 0px 5px 5px rgb(192, 192, 192);
+}
+
+.blog-content {
+  padding: 16px;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination .active {
+  border: 1px solid rgb(202, 202, 202);
+  background-color: rgb(227, 227, 227);
+  border-radius: 5px;
+}
+
+.pagination a {
+  color: #666;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border: 0;
+}
+
+@media screen and (max-width: 1100px) {
+
+  .homePage__blog-site-container {
+    width: 95%;
+  }
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .homePage__blog {
+    grid-template-columns: 1fr;
+  }
+
+
+  .homePage__blog-container {
+    grid-template-columns: 1fr;
+  }
+
+  .blog {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Aside */
+.wrapper {
+  display: flex;
+  align-items: center;
+
+}
+
+.wrapper .thumb {
+  flex: 1;
+}
+
+.wrapper .content {
+  flex: 2;
+  padding: 16px;
+
+}
+
+.wrapper p,
+.wrapper span,
+.wrapper a {
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .site-container {
+    width: 100%;
+    padding: 0 24px;
+  }
+
+  .blog-container {
+    grid-template-columns: 1fr;
+  }
+
+  .wrapper {
+    margin: 24px 0;
+  }
 }

@@ -1,18 +1,21 @@
 .con__flex {
-  //max-width: 65%;
-  margin: auto;
+  width: 65%;
+  margin: 0 auto;
   align-items: center;
   display: flex;
   flex-wrap: wrap;
 }
 
 .con__title {
-  text-transform: uppercase;
+
   margin-top: 3rem;
   text-align: center;
 }
 
 .con {
+  align-items: center;
+  justify-content: center;
+
   list-style: 1.5;
   margin: 0 auto;
   text-align: center;
@@ -29,6 +32,10 @@
 }
 
 @media screen and (max-width: 1000px) {
+
+  .con__flex {
+    width: 90%;
+  }
 
   .con {
     margin: 2rem auto;

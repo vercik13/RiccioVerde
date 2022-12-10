@@ -10,24 +10,109 @@ title: blog
 <title>Blog | Riccio Verde</title>
 </head>
 
-<section class="blog" id="blog">
-  <div class="aside__wrapper">
-    <h2>Blog</h2>
-    <aside class="aside">
 
-    {% for post in collections.blog | reverse %}
+<div class="scroll-top">^</div>
 
-      <div class="clanek">
-        <img class="clanek__image" src="/images/{{ post.data.foto }}" alt="{{ post.data.alt }}" />
 
-        <div class="clanek__content">
-          <h2 class="clanek__name">{{ post.data.title }}</h2>
-          <p class="clanek__description">{{ post.data.perex }}</p>
-          <button><a href="{{ post.url }}">Leggere...</a></button>
-        </div>
+    
+    <div class="blog__wrapper">
+      <h2>Blog</h2>
+
+      <div class="site-container">
+        <div class="blog-container">
+          
+          <div class="blog">
+
+            {% for post in collections.blog | reverse %}
+              <div class="blog-post">
+
+                <div class="thumbnail">
+                  <img class="blog__image" src="/images/{{ post.data.foto }}" alt="{{ post.data.alt }}" />
+                </div>
+                <div class="blog-content">
+                  <h3>{{ post.data.title }}</h3>
+                  <span>{{ page.date.toLocaleString ('cs-CZ') }}</span>
+                  
+                  <h4>{{ post.data.perex }}</h4>
+                  <p>{{ post.data.text }}</p>
+                  <div class="blog__button">
+                    <button><a href="{{ post.url }}">Leggere...</a></button>
+                  </div>
+                </div>
+
+              </div>
+            {% endfor %}
+
+            <div class="pagination">
+              <a href="#">&laquo;</a>
+              <a href="" class="active">1</a>
+              <a href="">2</a>
+              <a href="">3</a>
+              <a href="">4</a>
+              <a href="#">&raquo;</a>
+            </div>
+          </div>
+
+            <aside>
+     <!--        <div class="commented-posts">
+                <header>
+                  <h3>Most commente postes</h3>
+                </header>
+                {% for post in collections.blog | reverse | limit(3) %}
+                <div class="wrapper">
+                  <div class="thumb">
+                    <img class="clanek__image" src="/images/{{ post.data.foto }}" alt="{{ post.data.alt }}" />
+                  </div>
+                  <div class="content">
+                    <span>{{ post.data.perex }}</span>
+                    <h3>Top 10 recept</h3>
+                    <p>{{ post.data.perex }}</p>
+                    <a href="">8 Comments</a>
+                  </div>
+                </div>
+                {% endfor %}
+              </div>
+          --> 
+
+              <div class="recent-posts">
+                <header>
+                  <h3>Most Recents Posts</h3>
+                </header>
+                
+                  {% for post in collections.blog | reverse | limit(3) %}
+                  <a href="{{ post.url }}">
+                    <div class="wrapper">
+                      <div class="thumb">
+                        <img class="clanek__image" src="/images/{{ post.data.foto }}" alt="{{ post.data.alt }}" />
+                      </div>
+                      <div class="content">
+                        <h3>{{ post.data.title }}</h3>
+                        <p>{{ post.data.perex }}</p>
+                      </div>
+                    </div>
+                  </a>
+                  {% endfor %}
+                
+              </div>
+            </aside>
+
+          </div>
       </div>
 
-    {% endfor %}
-    </aside>
-  </div>
-</section>
+<!--
+      {% for post in collections.blog | reverse %}
+        <div class="clanek">
+          <img class="clanek__image" src="/images/{{ post.data.foto }}" alt="{{ post.data.alt }}" />
+
+          <div class="clanek__content">
+            <h2 class="clanek__name">{{ post.data.title }}</h2>
+            <p class="clanek__description">{{ post.data.perex }}</p>
+            <button><a href="{{ post.url }}">Leggere...</a></button>
+          </div>
+        </div>
+      {% endfor %}
+-->
+
+    </div>
+    
+

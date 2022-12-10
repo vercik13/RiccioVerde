@@ -1,24 +1,17 @@
 @use 'global';
 
-.card__name {
-  text-transform: uppercase;
-}
 
 .card {
   display: inline-block;
-
   max-width: 300px;
-
   width: 100%;
-  margin: 1rem auto;
-
+  margin: 0 auto 3rem auto;
   background-color: white;
   border-radius: 2px;
   box-shadow: 0px 5px 5px rgb(192, 192, 192);
 
   figure {
     width: 100%;
-
     margin: 0;
     padding: 0;
     background: #fff;
@@ -31,6 +24,8 @@
   }
 
   figure img {
+    height: 250px;
+    object-fit: cover;
     -webkit-transform: scale(1);
     transform: scale(1);
     -webkit-transition: .3s ease-in-out;
@@ -56,68 +51,4 @@
     padding: 0.5rem;
     justify-content: center;
   }
-
 }
-
-.card__info {
-  color: rgb(6, 154, 184);
-}
-
-@media screen and (min-width: 1040px) {}
-
-/*
-@media screen and (min-width: 1040px) {
-  .clanek {
-    margin: 1rem auto;
-
-    &__image {
-      max-width: 300px;
-      width: 100%;
-    }
-  }
-}*/
-
-/*
-.reference {
-  width: 90%;
-  margin: 2rem auto;
-  text-align: center;
-  padding: 2rem;
-  list-style: 1.5;
-}
-
-.reference h2 {
-  margin: 2rem auto;
-  text-transform: uppercase;
-}
-
-.reference__box {
-  width: 90%;
-  margin: 2rem auto;
-
-}
-
-.reference ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.reference__box li {
-  padding: 2rem 2rem 0 2rem;
-
-
-}
-
-.ref-img {
-  margin-top: 1rem;
-}
-
-@media screen and (max-width: 842px) {
-
-  .reference {
-    width: 90%;
-    padding: 0;
-  }
-
-}*/

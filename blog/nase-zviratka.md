@@ -2,6 +2,7 @@
 layout: layouts/clanek.njk
 title: Zvířátka
 perex: naše zvířátka
+text: Mikrojehličkování je prováděno po znecitlivění pokožky elektrickým mikrojehličkovacím perem, na jehož konci je upevněn jednorázový výměnný nástavec.
 foto: blog3.jpg
 alt: naše zvířátka
 tags: blog

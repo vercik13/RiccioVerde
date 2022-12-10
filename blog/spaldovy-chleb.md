@@ -2,6 +2,7 @@
 layout: layouts/clanek.njk
 title: Špaldový chléb
 perex: domácí recept na špaldový chléb
+text: Mikrojehličkování je prováděno po znecitlivění pokožky elektrickým mikrojehličkovacím perem, na jehož konci je upevněn jednorázový výměnný nástavec.
 foto: blog4.jpg
 alt: špaldový chléb
 tags: blog

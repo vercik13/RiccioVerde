@@ -11,6 +11,19 @@
   margin-right: 1rem;
 }
 
+.footer__contact-email,
+.footer__contact-phone {
+  position: relative;
+  margin-left: 30px;
+}
+
+.footer__icon {
+  margin: 0 4px;
+  position: absolute;
+  top: 5px;
+  left: -30px;
+}
+
 
 .footer__copyright {
   padding: 10px;

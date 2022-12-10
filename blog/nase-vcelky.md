@@ -2,6 +2,7 @@
 layout: layouts/clanek.njk
 title: Naše včelky
 perex: Naše včelky a jejich úly
+text: Mikrojehličkování je prováděno po znecitlivění pokožky elektrickým mikrojehličkovacím perem, na jehož konci je upevněn jednorázový výměnný nástavec.
 foto: blog1.jpg
 alt: naše včelky
 tags: blog
