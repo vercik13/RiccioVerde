@@ -1,11 +1,11 @@
 @use 'global';
 
 .attivita {
+
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 2rem;
   width: 90%;
-  margin: 0 auto;
+  margin: 5rem auto;
   text-align: center;
 
   &__text {
