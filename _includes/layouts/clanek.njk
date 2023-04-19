@@ -2,73 +2,25 @@
 layout: layouts/sablona.njk
 ---
 
-<div class="hero">
-
-
-    <div class="services__wrapper">
-      <div class="services__content">
-
-       <div class="services__header">
-
-        </div>
-
-         <div class="services__parts">
-
-            <div class="row">
-              <div class="left">
-                <img class="services__part-one-photo" src="/images/{{ foto }}" alt="{{ alt }}">
-              </div>
-
-              
-              <div class="right">
-
-                <div class="content">
-
-                  <h1 class="article__title">{{ title }}</h1>
-
-                        <p class="article__meta">
-                          {{ page.date.toLocaleString ('cs-CZ') }}
-                        </p>
-                        <p class="article__meta">
-                          {{ text }}
-                        </p>
-
-                </div>
-              </div>
-
-            </div>
-
-         </div>
-
-         <div class="services__part-two">
-            <p>
-                {{ content | safe }}
-            </p>
-        </div>
-
-      </div>
-    </div>
-
-    <!--  <article class="main__article">
-        <h1 class="article__title">{{ title }}</h1>
-
+<div class="row">
+  <div class="left">
+    <img class="text__photo" src="/images/{{ foto }}" alt="{{ alt }}">
+  </div>
+  <div class="right">
+    <div class="text__content">
+      <h1 class="article__title">{{ title }}</h1>
         <p class="article__meta">
           {{ page.date.toLocaleString ('cs-CZ') }}
         </p>
-
-        <div class="article__content">
-          <div class="article__text">
-            <p class="article__perex"></p>
-            
-
-            {{ content | safe }}
-
-          </div>
-
-          <img
-            class="article__image" src="/images/{{ foto }}" alt="{{ alt }}"
-          />
-        </div>
-      </article>-->
+        <p class="article__meta">
+          {{ text }}
+        </p>
+    </div>
+  </div>
 </div>
-  
+
+<div class="text__center">
+  <p>
+    {{ content | safe }}
+  </p>
+</div>

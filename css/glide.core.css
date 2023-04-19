@@ -13,8 +13,7 @@
   position: relative;
   width: 100%;
   list-style: none;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   transform-style: preserve-3d;
   touch-action: pan-Y;
   overflow: hidden;
@@ -28,7 +27,6 @@
 .glide__slides--dragging {
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 .glide__slide {
@@ -38,7 +36,6 @@
   white-space: normal;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   -webkit-touch-callout: none;
   -webkit-tap-highlight-color: transparent;
@@ -54,14 +51,12 @@
   -webkit-touch-callout: none;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 .glide__bullets {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 .glide--rtl {

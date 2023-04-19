@@ -52,17 +52,13 @@ layout: layouts/sablona.njk
 
   <section class="about" id="about">
     <div class="about__box">
-      <h2>Riccio Verde</h2>
+      <h1>Il Riccio Verde</h1>
       <p>
-        Chi siamo
-
-Siamo una famiglia contadina nata dalla passione per la terra, l'ideologia di una vita scandita dal ritmo di una volta, unita all'amore per la natura e l'interazione con gli animali... Da queste basi nasce l'azienda agricola Il Riccio Verde. 
-Il nostro podere si trova sulle colline Parmensi ad una altidudine di 550 metri in un ambiente misto di prati e boschi dove abbiamo trovato un ottimo equilibrio per sviluppare la nostra attività. L'altitudine non eccessiva ci permette di avere dei buoni risultati negli orti, i prati stabili ci permettono di avere degli ottimi foraggi per i nostri animali e i boschi ci garantiscono una autonomia di legna. Non possono mancare i pozzi, che dopo essere stati abbandonati per decenni, li abbiamo sistemati e  sono ritornati in funzione.
-Non meno importante per la nostra attività principale, l'APICOLTURA, è l'ambiente incontaminato da una agricoltura intensiva, una scarsa presenza umana e una ricca biodiversità botanica che ci permette di avere un prodotto genuino e di qualità.
-
+        Siamo una famiglia contadina nata dalla passione per la terra, l'ideologia di una vita scandita dal ritmo di una volta, unita all'amore per la natura e l'interazione con gli animali... Da queste basi nasce l'azienda agricola Il Riccio Verde. 
+        Il nostro podere si trova sulle colline Parmensi ad una altidudine di 550 metri in un ambiente misto di prati e boschi dove abbiamo trovato un ottimo equilibrio per sviluppare la nostra attività. L'altitudine non eccessiva ci permette di avere dei buoni risultati negli orti, i prati stabili ci permettono di avere degli ottimi foraggi per i nostri animali e i boschi ci garantiscono una autonomia di legna. Non possono mancare i pozzi, che dopo essere stati abbandonati per decenni, li abbiamo sistemati e  sono ritornati in funzione.
+        Non meno importante per la nostra attività principale, l'APICOLTURA, è l'ambiente incontaminato da una agricoltura intensiva, una scarsa presenza umana e una ricca biodiversità botanica che ci permette di avere un prodotto genuino e di qualità.
       </p>
     </div>
-    
   </section>
 
   <section class="attivita" id="attivita">
@@ -146,10 +142,9 @@ Non meno importante per la nostra attività principale, l'APICOLTURA, è l'ambie
     </div>    
   </section>
 
-  <section class="contatto" id="kontakt">
+  <section class="contatto" id="contatto">
     <h1 class="con__title">Contatti</h1>
     <div class="con__flex">
-
       <div class="con">
         <h2>+39 320 085 1689</h2>
         <h2>+39 389 609 2387</h2>
@@ -168,46 +163,57 @@ Non meno importante per la nostra attività principale, l'APICOLTURA, è l'ambie
 
       <div class="formular" id="formular">
         <div class="form-wrapper">
-
-        <form
-          action=""
-          method="POST"
-        >
-        <div class="form__flex">
-            
-              <div class="name-form">
-                <label for="name"></label>
-                <input type="text" name="name" required placeholder="Nome" />
+          <form onsubmit="sendEmail(); reset(); return false;">
+          <div class="form__flex">
+              
+                <div class="name-form">
+                  <label for="name"></label>
+                  <input type="text" name="name" required placeholder="Nome" />
+                </div>
+          </div>
+          <div class="form__flex">
+              <div class="email-form">
+                <label for="email" ></label>
+                <input type="email" id="email" required name="_replyto" placeholder="Email"/>
+              </div> 
+              <div class="tel-form">
+                <label for="telephone"></label>
+                <input type="telephone" name="telephone" id="telephone" placeholder="Tel.">
               </div>
-        </div>
-        <div class="form__flex">
-            <div class="email-form">
-              <label for="email"></label>
-              <input type="email" required name="_replyto" placeholder="Email"/>
-            </div> 
-            <div class="tel-form">
-              <label for="telephone"></label>
-              <input type="telephone" name="telephone" id="telephone" placeholder="Tel.">
             </div>
-          </div>
-            <div class="text-form">
-              <label for="text"></label>
-              <textarea name="message" placeholder="Messaggio"></textarea> 
-            </div>  
-          <div class="button-form">
-            <button class="button" value="Send" type="submit">Inviare</button>
-          </div>
+              <div class="text-form">
+                <label for="text"></label>
+                <textarea name="message" placeholder="Messaggio"></textarea> 
+              </div>  
+            <div class="button-form">
+              <button class="button" value="Send" type="submit">Inviare</button>
+            </div>
           </form>
-
         </div>
       </div>
-      
-    </div>
+     </div>
   </section>
 
   <div class="background-img--services-venkov-bg"></div>
 
 </div>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+  function sendEmail() {
+    Email.send({
+    Host : "smtp.gmail.com",
+    Username : "vero.vokounova@gmail.com",
+    Password : "password",
+    To : 'vero.vokounova@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "This is the subject",
+    Body : "And this is the body"
+  }).then(
+    message => alert(message)
+  );
+  }
+</script>
 
 
 

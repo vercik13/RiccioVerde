@@ -2,11 +2,12 @@
 
 
 .glide {
-  height: 600px;
   box-shadow: 0px 5px 5px grey;
 
   h2 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*font-family: 'Euphorigenic', sans-serif;*/
+    font-family: 'Source Serif Pro', sans-serif;
+    /*letter-spacing: 0.2rem;*/
   }
 
 
@@ -26,7 +27,7 @@
   &__site1,
   &__site2,
   &__site3 {
-    height: 600px;
+    height: 75vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;

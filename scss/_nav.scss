@@ -1,26 +1,37 @@
 @use 'global';
 
-.nav-links {
-  list-style: none;
-  margin: 0 auto;
-
-  //padding: 1rem;
-  text-align: center;
-  display: flex;
-}
 
 .nav {
 
-  margin: 0 auto;
+  width: 100%;
+}
+
+.nav-links {
   display: flex;
+  justify-content: space-between;
+}
 
-  align-items: center;
-  justify-items: center;
-  height: 12vh;
-
+.nav-left,
+.nav-right {
+  display: flex;
+  text-align: center;
 }
 
 
+/*
+.nav_left {
+  justify-content: flex-start;
+  /* position: absolute;
+  top: -60px;
+  left: 50px;
+}
+
+.nav_right {
+  justify-content: flex-end;
+  /*  position: absolute;
+  top: -60px;
+  right: 50px;
+}*/
 
 .nav__item {
   width: 180px;
@@ -30,13 +41,14 @@
 
 .nav__item:not(:last-child) {
   border-right: 1px solid grey;
+
 }
 
 
 .nav__link {
   display: block;
   padding: 1rem;
-
+  font-family: 'Source Serif Pro', sans-serif;
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
@@ -44,12 +56,11 @@
 }
 
 .nav__link {
-  color: #0000;
   background:
-    linear-gradient(90deg, #9c8383 50%, #000 0) var(--_p, 100%)/200% no-repeat;
+    linear-gradient(90deg, global.$c-logo 50%, #000 0) var(--_p, 100%)/200% no-repeat;
   -webkit-background-clip: text;
   background-clip: text;
-  transition: .4s;
+  transition: .6s;
 }
 
 .nav__link:hover {
@@ -65,7 +76,7 @@
 }
 
 
-@media screen and (max-width: 842px) {
+@media screen and (max-width: 1000px) {
   .nav {
     padding: 0;
     height: 5px;
@@ -83,7 +94,7 @@
   /* Burger thing */
   .burger {
     position: absolute;
-    top: 70px;
+    top: 2vh;
     right: 10px;
     display: block;
     cursor: pointer;
@@ -108,8 +119,9 @@
   }
 
   .nav-links {
-    background: rgb(49, 49, 49);
-    width: 100%;
+    overflow: hidden;
+    background: global.$c-logo;
+    width: 70%;
     height: 100%;
     position: fixed;
     top: 0;
@@ -117,6 +129,12 @@
     flex-direction: column;
     align-items: center;
     transition: transform 1s ease;
+  }
+
+  .nav-left,
+  .nav-right {
+    display: block;
+    text-align: center;
   }
 
   .nav-open {
