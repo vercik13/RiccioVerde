@@ -2,25 +2,28 @@
 layout: layouts/sablona.njk
 ---
 
-<div class="row">
-  <div class="left">
-    <img class="text__photo" src="/images/{{ foto }}" alt="{{ alt }}">
-  </div>
-  <div class="right">
-    <div class="text__content">
-      <h2 class="article__title">{{ title }}</h2>
-        <p class="article__meta">
-          {{ page.date.toLocaleString ('cs-CZ') }}
-        </p>
-        <p class="article__meta">
-          {{ text }}
-        </p>
+<div class="clanek-site">
+
+  <div class="row">
+    <div class="left">
+      <img class="text__photo" src="/images/{{ foto }}" alt="{{ alt }}">
+    </div>
+    <div class="right">
+      <div class="text__content">
+        <h2 class="article__title">{{ title }}</h2>
+          <p class="article__meta">
+            {{ page.date.toLocaleString ('cs-CZ') }}
+          </p>
+          <p class="article__meta">
+            {{ text }}
+          </p>
+      </div>
     </div>
   </div>
-</div>
 
-<div class="text__center">
-  <p>
-    {{ content | safe }}
-  </p>
+  <div>
+    <p>
+      {{ content | safe }}
+    </p>
+  </div>
 </div>

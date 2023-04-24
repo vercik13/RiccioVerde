@@ -562,6 +562,10 @@ button:focus {
   width: 100%;
 }
 
+.clanek-site {
+  padding: 3rem 0;
+}
+
 .clanek {
   display: inline-block;
   padding: 1rem auto;
@@ -926,13 +930,13 @@ textarea {
   justify-content: space-between;
 }
 
+/*
 .header__left {
   padding: 0 1rem;
   background-color: rgb(255, 191, 0);
   height: 30px;
   font-size: 16px;
-}
-
+}*/
 .header__right {
   display: flex;
   justify-content: flex-end;
@@ -1134,12 +1138,18 @@ textarea {
 }
 
 .text__center {
-  margin: 0 auto;
+  width: 70%;
+  margin: 1rem auto;
 }
 
 .text__center p {
   text-align: center;
   padding: 0.5rem;
+}
+
+.text__center-photo {
+  display: flex;
+  justify-content: center;
 }
 
 .services__button {
@@ -1159,11 +1169,6 @@ textarea {
   margin: 0 auto;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 50px 30px;
-}
-
-.text__photo {
-  display: flex;
-  justify-content: center;
 }
 
 .text__photo {
