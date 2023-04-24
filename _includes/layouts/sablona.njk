@@ -81,6 +81,23 @@
     }
     new Glide('.glide', config).mount()
 </script>
+
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+  function sendEmail(){
+      Email.send({
+      Host : "smtp25.elasticemail.com ",
+      Username : "vero.vokounova@gmail.com ",
+      Password : "966B8E4D559B190E296B981E940CC973AE8B",
+      To : 'vero.vokounova@gmail.com',
+      From : "vero.vokounova@gmail.com'",
+      Subject : "New Contact Form Enquiry",
+      Body : "And this is the body"
+    }).then(
+    message => alert(message)
+    );
+  }
+</script>
     
 </body>
 </html>

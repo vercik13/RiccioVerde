@@ -84,7 +84,6 @@
 
   .nav__item:not(:last-child) {
     border-right: none;
-    width: 90%;
     margin-top: 1rem;
   }
 
@@ -121,9 +120,10 @@
   .nav-links {
     overflow: hidden;
     background: global.$c-logo;
-    width: 70%;
+    width: 90%;
     height: 100%;
     position: fixed;
+    justify-content: center;
     top: 0;
     left: 100%;
     flex-direction: column;
@@ -135,6 +135,7 @@
   .nav-right {
     display: block;
     text-align: center;
+
   }
 
   .nav-open {

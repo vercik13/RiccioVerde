@@ -1048,7 +1048,6 @@ textarea {
   }
   .nav__item:not(:last-child) {
     border-right: none;
-    width: 90%;
     margin-top: 1rem;
   }
   /* Burger thing */
@@ -1075,9 +1074,10 @@ textarea {
   .nav-links {
     overflow: hidden;
     background: rgb(22, 82, 35);
-    width: 70%;
+    width: 90%;
     height: 100%;
     position: fixed;
+    justify-content: center;
     top: 0;
     left: 100%;
     flex-direction: column;
