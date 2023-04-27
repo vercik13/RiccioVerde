@@ -223,7 +223,7 @@ h3,
 }
 
 .background-img--services-orto-head {
-  background-image: url("/images/orto-bg2.jpg");
+  background-image: url("/images/fotky/img-49.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1178,6 +1178,10 @@ textarea {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.text__photo-miele {
+  max-width: 350px;
 }
 
 .left {

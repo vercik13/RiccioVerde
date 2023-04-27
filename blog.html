@@ -2,55 +2,49 @@
 layout: layouts/sablona.njk
 title: blog
 ---
-<head>
-  <meta
-  name="description"
-  content="Blog | Riccio Verde"
-/>
-<title>Blog | Riccio Verde</title>
-</head>
 
+<head>
+  <meta name="description" content="Blog | Riccio Verde" />
+  <title>Blog | Riccio Verde</title>
+</head>
 
 <div class="scroll-top">^</div>
 
+<div class="blog__wrapper">
+  <div class="text__header">
+    <h2>Blog</h2>
+  </div>
 
-    
-    <div class="blog__wrapper">
-      <div class="text__header">
-        <h2>Blog</h2>
-      </div>
-      
-
-      <div class="site-container">
-        <div class="blog-container">
-          
-          <div class="blog">
-
-            {% for post in collections.blog | reverse %}
-              <div class="blog-post">
-
-                <ul id="paginated-list" data-current-page="1" aria-live="polite">
-                  <li>
-
-                    <div class="thumbnail">
-                      <img class="blog__image" src="/images/{{ post.data.foto }}" alt="{{ post.data.alt }}" />
-                    </div>
-                    <div class="blog-content">
-                      <h3>{{ post.data.title }}</h3>
-                      <span>{{ page.date.toLocaleString ('cs-CZ') }}</span>
-                      
-                      <h4>{{ post.data.perex }}</h4>
-                      <p>{{ post.data.text }}</p>
-                      <div class="blog__button">
-                        <button><a href="{{ post.url }}">Leggere...</a></button>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
+  <div class="site-container">
+    <div class="blog-container">
+      <div class="blog">
+        {% for post in collections.blog | reverse %}
+        <div class="blog-post">
+          <ul id="paginated-list" data-current-page="1" aria-live="polite">
+            <li>
+              <div class="thumbnail">
+                <img
+                  class="blog__image"
+                  src="/images/{{ post.data.foto }}"
+                  alt="{{ post.data.alt }}"
+                />
               </div>
-            {% endfor %}
+              <div class="blog-content">
+                <h3>{{ post.data.title }}</h3>
+                <span> {{ page.date.toLocaleString ('cs-CZ') }} </span>
 
-       <!--<div class="pagination">
+                <h4>{{ post.data.perex }}</h4>
+                <p>{{ post.data.text }}</p>
+                <div class="blog__button">
+                  <button><a href="{{ post.url }}">Leggere...</a></button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        {% endfor %}
+
+        <!--<div class="pagination">
               <a href="#">&laquo;</a>
               <a href="" class="active">1</a>
               <a href="">2</a>
@@ -59,7 +53,7 @@ title: blog
               <a href="#">&raquo;</a>
             </div>-->
 
-<!--
+        <!--
 <div class="main__pagination">
   <nav class="pagination-container">
     <button class="pagination-button" id="prev-button" aria-label="Previous page" title="Previous page">
@@ -75,16 +69,10 @@ title: blog
     </button>
   </nav>
 </div>-->
+      </div>
 
-
-
-
-
-
-          </div>
-
-            <aside>
-     <!--        <div class="commented-posts">
+      <aside>
+        <!--        <div class="commented-posts">
                 <header>
                   <h3>Most commente postes</h3>
                 </header>
@@ -102,34 +90,36 @@ title: blog
                 </div>
                 {% endfor %}
               </div>
-          --> 
+          -->
 
-              <div class="recent-posts">
-                <header>
-                  <h2>Post più recenti</h2>
-                </header>
-                
-                  {% for post in collections.blog | reverse | limit(3) %}
-                  <a href="{{ post.url }}">
-                    <div class="wrapper">
-                      <div class="thumb">
-                        <img class="clanek__image" src="/images/{{ post.data.foto }}" alt="{{ post.data.alt }}" />
-                      </div>
-                      <div class="content">
-                        <h3>{{ post.data.title }}</h3>
-                        <p>{{ post.data.perex }}</p>
-                      </div>
-                    </div>
-                  </a>
-                  {% endfor %}
-                
+        <div class="recent-posts">
+          <header>
+            <h2>Post più recenti</h2>
+          </header>
+
+          {% for post in collections.blog | reverse | limit(3) %}
+          <a href="{{ post.url }}">
+            <div class="wrapper">
+              <div class="thumb">
+                <img
+                  class="clanek__image"
+                  src="/images/{{ post.data.foto }}"
+                  alt="{{ post.data.alt }}"
+                />
               </div>
-            </aside>
+              <div class="content">
+                <h3>{{ post.data.title }}</h3>
+                <p>{{ post.data.perex }}</p>
+              </div>
+            </div>
+          </a>
+          {% endfor %}
+        </div>
+      </aside>
+    </div>
+  </div>
 
-          </div>
-      </div>
-
-<!--
+  <!--
       {% for post in collections.blog | reverse %}
         <div class="clanek">
           <img class="clanek__image" src="/images/{{ post.data.foto }}" alt="{{ post.data.alt }}" />
@@ -141,8 +131,4 @@ title: blog
           </div>
         </div>
       {% endfor %}
--->
-
-    </div>
-    
-
+--></div>
