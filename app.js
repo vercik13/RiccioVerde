@@ -1,3 +1,5 @@
+/* Nav Mobile Responsive */
+
 const nav = document.querySelector(".nav-links");
 const burger = document.querySelector(".burger");
 const links = nav.querySelectorAll("a");
@@ -15,6 +17,8 @@ links.forEach(link => {
 });
 
 
+/* Blog Scroll Button */ 
+/*
 const scrollBtn = document.querySelector('.scroll-top')
 
 window.addEventListener('scroll', () => {
@@ -28,108 +32,31 @@ window.addEventListener('scroll', () => {
 scrollBtn.addEventListener('click', () => {
   document.documentElement.scrollTop = 0;
 })
+*/
 
+/* EmailJS */
 
-/* Pagination */
-
-const paginationNumbers = document.getElementById("pagination-numbers");
-const paginatedList = document.getElementById("paginated-list");
-const listItems = paginatedList.querySelectorAll("li");
-const nextButton = document.getElementById("next-button");
-const prevButton = document.getElementById("prev-button");
-
-const paginationLimit = 3;
-const pageCount = Math.ceil(listItems.length / paginationLimit);
-let currentPage = 1;
-
-const disableButton = (button) => {
-  button.classList.add("disabled");
-  button.setAttribute("disabled", true);
-};
-
-const enableButton = (button) => {
-  button.classList.remove("disabled");
-  button.removeAttribute("disabled");
-};
-
-const handlePageButtonsStatus = () => {
-  if (currentPage === 1) {
-    disableButton(prevButton);
-  } else {
-    enableButton(prevButton);
+function SendMail() {
+  const params = {
+    from_name : document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    telephone: document.getElementById("telephone").value,
+    message : document.getElementById("message").value,
   }
+  emailjs.send("service_9d022em", "template_u1qsswa", params)
+  .then((res) => {
 
-  if (pageCount === currentPage) {
-    disableButton(nextButton);
-  } else {
-    enableButton(nextButton);
-  }
-};
+    from_name : document.getElementById("name").value = "";
+    email: document.getElementById("email").value = "";
+    telephone: document.getElementById("telephone").value = "";
+    message : document.getElementById("message").value = "";
 
-const handleActivePageNumber = () => {
-  document.querySelectorAll(".pagination-number").forEach((button) => {
-    button.classList.remove("active");
-    const pageIndex = Number(button.getAttribute("page-index"));
-    if (pageIndex == currentPage) {
-      button.classList.add("active");
-    }
-  });
-};
+    alert("Il messaggio è stato inviato con successo :-) ");
+  })
+}
 
-const appendPageNumber = (index) => {
-  const pageNumber = document.createElement("button");
-  pageNumber.className = "pagination-number";
-  pageNumber.innerHTML = index;
-  pageNumber.setAttribute("page-index", index);
-  pageNumber.setAttribute("aria-label", "Page " + index);
 
-  paginationNumbers.appendChild(pageNumber);
-};
 
-const getPaginationNumbers = () => {
-  for (let i = 1; i <= pageCount; i++) {
-    appendPageNumber(i);
-  }
-};
 
-const setCurrentPage = (pageNum) => {
-  currentPage = pageNum;
-
-  handleActivePageNumber();
-  handlePageButtonsStatus();
-  
-  const prevRange = (pageNum - 1) * paginationLimit;
-  const currRange = pageNum * paginationLimit;
-
-  listItems.forEach((item, index) => {
-    item.classList.add("hidden");
-    if (index >= prevRange && index < currRange) {
-      item.classList.remove("hidden");
-    }
-  });
-};
-
-window.addEventListener("load", () => {
-  getPaginationNumbers();
-  setCurrentPage(1);
-
-  prevButton.addEventListener("click", () => {
-    setCurrentPage(currentPage - 1);
-  });
-
-  nextButton.addEventListener("click", () => {
-    setCurrentPage(currentPage + 1);
-  });
-
-  document.querySelectorAll(".pagination-number").forEach((button) => {
-    const pageIndex = Number(button.getAttribute("page-index"));
-
-    if (pageIndex) {
-      button.addEventListener("click", () => {
-        setCurrentPage(pageIndex);
-      });
-    }
-  });
-});
 
 

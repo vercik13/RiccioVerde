@@ -10,8 +10,6 @@
     />
     <meta name="robots" content="index,follow" />
 
-
-
     <!--OpenGraph meta tag-->
 
   <meta property="og:title" content="Riccio Verde">
@@ -21,7 +19,6 @@
   <meta property="og:url" content="https://ricioverde.it">
   <meta property="og:locale" content="it_It">
 
-  
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,9 +27,7 @@
   <link href="https://fonts.cdnfonts.com/css/euphorigenic" rel="stylesheet">
   <link href="https://fonts.cdnfonts.com/css/source-serif-pro" rel="stylesheet">
                  
-
   <!--Favicon-->
-
   <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
@@ -43,14 +38,11 @@
   <meta name="msapplication-config" content="/icons/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
 
-
-
   <!-- Naše vlastní CSS -->
-  
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/glide.core.css">
   <link rel="stylesheet" href="/css/glide.theme.css">
-  
+
 </head>
 
 <body>
@@ -82,22 +74,16 @@
     new Glide('.glide', config).mount()
 </script>
 
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script>
-  function sendEmail(){
-      Email.send({
-      Host : "smtp25.elasticemail.com ",
-      Username : "vero.vokounova@gmail.com ",
-      Password : "966B8E4D559B190E296B981E940CC973AE8B",
-      To : 'vero.vokounova@gmail.com',
-      From : "vero.vokounova@gmail.com'",
-      Subject : "New Contact Form Enquiry",
-      Body : "And this is the body"
-    }).then(
-    message => alert(message)
-    );
-  }
+<!-- EmailJS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
+<script type="text/javascript">
+  (function(){
+      emailjs.init("_M9aAl7FkVZB9f1Fg");
+  })();
+</script>
+
+
     
 </body>
 </html>

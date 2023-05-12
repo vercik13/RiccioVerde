@@ -163,32 +163,31 @@ layout: layouts/sablona.njk
 
       <div class="formular" id="formular">
         <div class="form-wrapper">
-          <form onsubmit="sendEmail(); reset(); return false;">
+          
           <div class="form__flex">
-              
-                <div class="name-form">
-                  <label for="name"></label>
-                  <input type="text" name="name" required placeholder="Nome" />
-                </div>
+            <div class="name-form">
+              <label for="name"></label>
+              <input type="text" id="name" required placeholder="Nome" />
+            </div>
           </div>
           <div class="form__flex">
               <div class="email-form">
                 <label for="email" ></label>
-                <input type="email" id="email" required name="_replyto" placeholder="Email"/>
+                <input type="email" id="email" placeholder="Email"/>
               </div> 
               <div class="tel-form">
                 <label for="telephone"></label>
-                <input type="telephone" name="telephone" id="telephone" placeholder="Tel.">
+                <input type="telephone" id="telephone" placeholder="Tel.">
               </div>
             </div>
               <div class="text-form">
                 <label for="text"></label>
-                <textarea name="message" placeholder="Messaggio"></textarea> 
+                <textarea name="message" id="message" placeholder="Messaggio"></textarea> 
               </div>  
             <div class="button-form">
-              <button class="button" value="Send" type="submit">Inviare</button>
+              <button onclick="SendMail()" class="button" value="send" type="submit">Inviare</button>
             </div>
-          </form>
+          
         </div>
       </div>
      </div>
@@ -197,6 +196,8 @@ layout: layouts/sablona.njk
   <div class="background-img--services-venkov-bg"></div>
 
 </div>
+
+
 
 
 
